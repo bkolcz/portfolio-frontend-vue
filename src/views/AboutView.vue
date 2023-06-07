@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import "../styles/about.scss";
+import AboutComponent from '@/components/AboutComponent.vue';
 </script>
+
 <template>
-  <main class="about">
-    <h1>This is an about page</h1>
-  </main>
+  <AboutComponent />
 </template>
 

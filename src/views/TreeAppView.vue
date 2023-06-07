@@ -1,6 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TreeLoaderComponent from "@/components/TreeLoaderComponent.vue";
+</script>
+
 <template>
-    <main>
-        <h1>This is place for Tree Application</h1>
-    </main>
+    <TreeLoaderComponent/>
 </template>

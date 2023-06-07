@@ -5,10 +5,10 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-  <header>
-    Welcome to portfolio-frontend-vue project.
+  <header class="header-general">
+    portfolio-frontend-vue
   </header>
-  <nav class="nav-general">
+  <nav class="navbar mb-1">
     <RouterLink to="/" class="nav-item">Home</RouterLink>
     <RouterLink to="/tree" class="nav-item">Tree application</RouterLink>
     <RouterLink to="/about" class="nav-item">About</RouterLink>
