@@ -1,14 +1,16 @@
-#app {
-    display: flex;
-    flex-direction: column;
-    // justify-content: space-between;
-}
-
-.nav-general {
-    display: flex;
-    padding: 0.5em;
-}
-
-.nav-item {
-    padding: 0.5em;
-}
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Variables
+@import 'variables';
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+// Tree style
+@import 'treeStyle';
+// Tree controls
+@import 'treeControls';
+// Tooltip style
+@import 'tooltipStyle';
+// Navbar style
+@import 'navbar';
+// Header style
+@import 'header';

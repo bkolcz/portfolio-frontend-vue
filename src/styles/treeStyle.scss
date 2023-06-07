@@ -1,0 +1,91 @@
+.node,
+.tooltip-node {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1px 1px 0px 1px;
+
+    .node-header {
+        display: inline-flex;
+
+        &:only-child {
+
+            .node-controls-fold,
+            .node-controls-sort-asc,
+            .node-controls-sort-desc {
+                display: none;
+            }
+        }
+    }
+
+    .node-controls {
+        display: inline-flex;
+
+        * {
+            user-select: none;
+            padding: 1px 5px 1px 5px;
+            margin: 2px 3px 2px 3px;
+            border: gray;
+            border-radius: 5px;
+            border-width: 1px;
+            border-style: solid;
+
+            &:hover {
+                background-color: inherit;
+            }
+        }
+
+        .node-controls-fold {
+            border: none;
+            transition: all 0.5s;
+        }
+    }
+}
+
+.node-fold {
+    >.node-header {
+        >.node-controls {
+            .node-controls-fold {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    >.node-header~* {
+        display: none;
+    }
+}
+
+#node-0,
+#node-edit {
+    margin-left: 0;
+    padding: 8px;
+}
+
+.tree-background {
+    background-color: #e8e8e8;
+    padding: 0px;
+}
+
+#tree {
+    // min-width: 100vh;
+    padding: 0px;
+}
+
+.mouseover-node-button:hover {
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    transform: scale(1.2) perspective(1px);
+}
+
+.mouseover-node {
+    border-radius: 5px;
+    background-color: #49a8f7;
+}
+
+.edit-node-input {
+    width: inherit;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,13 @@
+.navbar {
+    background-color: #055a8e;
+    justify-content: flex-start;
+}
+
+.nav-item {
+    padding: 5px;
+    text-decoration: none;
+    color:aliceblue;
+    &:hover {
+        color: #3d8ab9;
+    }
+}
