@@ -5,11 +5,13 @@ export const TreeNodeApi = {
         get deleteTree(): string { return this.base + "/delete-tree"; },
         get shuffle(): string { return this.base + "/shuffle"; },
         get supply(): string { return this.base + "/supply"; },
-        get lastElementItem(): string { return this.base + "/last-element/item"; }
+        get lastElementItem(): string { return this.base + "/last-element/item"; },
+        get lastElementIndex(): string { return this.base + "/last-element/index"; },
     },
     get base(): string { return `${this.root}${this.routes.base}`; },
     get deleteTree(): string { return `${this.root}${this.routes.deleteTree}`; },
     get shuffle(): string { return `${this.root}${this.routes.shuffle}`; },
     get supply(): string { return `${this.root}${this.routes.supply}`; },
-    get lastElementItem(): string { return `${this.root}${this.routes.lastElementItem}`; }
+    get lastElementItem(): string { return `${this.root}${this.routes.lastElementItem}`; },
+    get lastElementIndex(): string { return `${this.root}${this.routes.lastElementIndex}`; },
 };
